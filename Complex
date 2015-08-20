@@ -1,0 +1,67 @@
+/*A complex object which has basic operation between two complex numbers*/
+class Complex{
+    /*Member Variable*/
+    
+    //first real & imaginary complex numbers
+    private float r1, i1;
+
+    //second real & imaginary complex numbers
+    private float r2, i2;
+
+    //A count of all Complex objects
+    private Static int count;
+    
+    //Default Constructor
+    complex(){
+    r1=0;
+    i1=0;
+    ++count;
+    if(count==2){
+        break;
+	}
+    }
+
+    //Parameterised Constructor
+    complex(float r1 , float i1){
+    this.r1=r1;
+    this.i1=i1;
+    ++count;
+    if(count==2){
+        break;
+	}
+    }
+
+    /*Setter Methods*/
+
+    //set  real & imaginary complex numbers
+    public void realNo(float re1){
+    this.r1=re1;
+    }
+    public void imgNo(float im1){
+    this.i1=im1;
+    }
+
+    /*Getter Methods*/
+
+    //Print complex Number
+    public void comPint(){
+    System.out.println("complex no"+count+"is" +this.r1+"+i"+this.i1);
+    }
+
+    //Addition of two complex numbers
+    public void comAdd(){
+    };
+
+    //Subtraction of two complex numbers
+    public void comSub(){
+    };
+
+    //Multiplication of two complex numbers
+    public void comMul(){
+    };
+
+    //Division of two complex numbers
+    public void comDiv(){
+    };
+
+}
