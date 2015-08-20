@@ -5,9 +5,6 @@ class Complex{
     //first real & imaginary complex numbers
     private float r1, i1;
 
-    //second real & imaginary complex numbers
-    private float r2, i2;
-
     //A count of all Complex objects
     private Static int count;
     
